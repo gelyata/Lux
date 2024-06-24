@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>LUX</title>
+  </head>
+  <body>
+    <div class="modals">
+      <div class="modal" id="modalOrder">
+        <div class="modal__quit"></div>
+        <div class="modal__wrapper">
+          <!-- содержимое модального окна -->
+          <h1>Регистрация или вход</h1>
+          <form action="#">
+            <div class="modal_forms">
+              <p class="title">Войдите/ зарегистрируйтесь</p>
+              <input placeholder="Имя" type="text" />
+              <input placeholder="+7_____-__-__" type="tel" />
+              <button  type="submit">Начать поиск</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container flex">
+        <div class="left_header">
+          <a href="index.html" class="logo"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="main_header">
+          <nav>
+            <a href="#top">ТОП</a>
+            <a href="#reviews">ОТЗЫВЫ</a>
+            <a href="#form">КОНТАКТЫ</a>
+          </nav>
+        </div>
+        <div class="right_header">
+          <a href="#"><img src="img/search.png" alt="search" /></a>
+          <a class="modal_btn" id="modalOrder" href="#"
+            ><img src="img/login.png" alt="login"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="banner">
+          <h1>Найди свой лучший вариант</h1>
+          <p>С надежной компанией в надежном месте</p>
+          <a href="#" class="button_banner"> Начать поиск </a>
+        </div>
+        <div class="top_variables">
+          <h2 id="top">Топ 10 вариантов</h2>
+          <div class="slider_variables">
+            <div class="top_slider">
+              <ul class="carousel">
+                <li class="card">
+                  <div class="top_slider_card first">
+                    <div class="action_block">Выгодно</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card second">
+                    <div class="action_block">Выгодно</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card third">
+                    <div class="action_block">Выгодно</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card first">
+                    <div class="action_block">Выгодно</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card second">
+                    <div class="action_block">Выгодно</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card third">
+                    <div class="action_block">Выгодно</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="but buttonss">
+              <div id="left" class="next">
+                <img src="img/left_arrow_black.png" alt="left_arrow_black" />
+              </div>
+              <div id="right" class="prev">
+                <img src="img/right_arrow_black.png" alt="right_arrow_black" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="container">
+          <h2 id="reviews">Отзывы</h2>
+          <div class="reviews_slider">
+            <div class="top_slider">
+              <ul class="carousel car2">
+                <li class="card">
+                  <div class="top_slider_card_reviews">
+                    <p class="title">Михаил, 28 лет</p>
+                    <p class="text">
+                      Благодаря сайту компании я быстро нашел подходящую
+                      квартиру в центре города. Процесс поиска и покупки был
+                      очень удобным и прозрачным. Особенно понравилось, что на
+                      сайте были подробные описания и фотографии всех объектов.
+                      Рекомендую!
+                    </p>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card_reviews">
+                    <p class="title">Инна, 35 лет</p>
+                    <p class="text">
+                      Искала загородный дом для семьи и обратилась в компанию.
+                      Сотрудники помогли подобрать несколько вариантов,
+                      организовали просмотры. В итоге мы нашли идеальный дом,
+                      полностью соответствующий нашим требованиям. Спасибо за
+                      профессиональную работу!"
+                    </p>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card_reviews">
+                    <p class="title">Игорь, 25 лет</p>
+                    <p class="text">
+                      Отличный сайт с большим выбором объектов недвижимости.
+                      Удобная навигация, подробные описания и фотографии.
+                    </p>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card_reviews">
+                    <p class="title">Марина, 30 лет</p>
+                    <p class="text">
+                      Хочу поблагодарить компанию за помощь в покупке
+                      загородного дома. Рекомендую этот сайт всем, кто ищет
+                      надежного партнера для покупки или продажи недвижимости
+                    </p>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card_reviews">
+                    <p class="title">Марина, 30 лет</p>
+                    <p class="text">
+                      Хочу поблагодарить компанию за помощь в покупке
+                      загородного дома. Рекомендую этот сайт всем, кто ищет
+                      надежного партнера для покупки или продажи недвижимости
+                    </p>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="top_slider_card_reviews">
+                    <p class="title">Марина, 30 лет</p>
+                    <p class="text">
+                      Хочу поблагодарить компанию за помощь в покупке
+                      загородного дома. Рекомендую этот сайт всем, кто ищет
+                      надежного партнера для покупки или продажи недвижимости
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="but buttonsss ">
+              <div id="left" class="next">
+                <img src="img/left_arrow_white.png" alt="left_arrow_white" />
+              </div>
+              <div id="right" class="prev">
+                <img src="img/right_arrow_white.png" alt="right_arrow_white" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <form class="form" action="#">
+          <div class="left_form">
+            <img src="img/form_bg.png" alt="form_bg" />
+          </div>
+          <div class="right_form">
+            <p class="title">Остались вопросы?</p>
+            <p class="text">
+              Мы перезвоним Вам и проконсультируем по любому вопросу
+            </p>
+            <input placeholder="Имя" type="text" />
+            <input placeholder="Телефон" type="tel" />
+            <button type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container flex_foot">
+        <div class="top flex_footer">
+          <div class="left_foter">
+            <a href="inde.html" class="logo">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="main_footer">
+            <div class="top_main_footer">
+              <nav>
+                <a href="#top">ТОП</a>
+                <a href="#reviews">ОТЗЫВЫ</a>
+                <a href="#form">КОНТАКТЫ</a>
+              </nav>
+            </div>
+          </div>
+          <div id="form" class="right_footer">+38 (099) 999 90 90</div>
+        </div>
+        <div class="socials">
+          <a href="#"><img src="img/vk.png" alt="facebook" /></a>
+          <a href="#"><img src="img/odnoklass.png" alt="instagram" /></a>
+          <a href="#"><img src="img/youtube.png" alt="youtube" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+  </body>
+</html>

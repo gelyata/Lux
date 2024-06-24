@@ -1,0 +1,480 @@
+/* подключаем шрифты */
+@font-face {
+  font-family: "roboto_regylar";
+  src: url("../font/roboto/RobotoCondensed-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Fira_sans_semiBold";
+  src: url("../font/fira/FiraSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Fira_sans_Medium";
+  src: url("../font/fira/FiraSans-Medium.ttf");
+}
+/* обнуление лишних стилей */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* контейнер сайта */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+/*----------modals-------------*/
+.modals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* фон при маодальном окне */
+  background: rgba(0, 0, 0, 0.274);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 1;
+}
+
+.modals._active {
+  display: flex;
+}
+.modal {
+  display: none;
+  position: relative;
+}
+.modal._active {
+  display: block;
+}
+.for_flex_form{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+.left_window img{
+  width: 330px;
+}
+.modal_form{
+  background: #E9D8D3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 484px;
+  height: 445px;
+}
+.modal_form input{
+  outline: none;
+  padding-left: 25px;
+}
+.modal__quit {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  background: url(../img/close.svg);
+}
+.left_window{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+select{
+  padding-left: 25px;
+  outline: none;
+}
+option{
+  background: rgba(203, 179, 170, 0.93);
+  color: white;
+}
+.checkbox{
+  display: flex;
+  gap: 5px; 
+}
+.checkbox input{
+  width: auto;
+  height: auto;
+  font-size: 18px;
+}
+
+.checkbox p{
+  margin-bottom: 0;
+  width: 241.78px;
+  text-align: center;
+}
+.modal_form p{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.modal__wrapper h1{
+  font-family: Fira_sans_semiBold;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.modal__wrapper{
+  background: #332208;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 787px;
+  height: 617px;
+}
+.modal_forms{
+  background: white;
+  width: 484px;
+  height: 353px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal_forms p{
+  font-family:Fira_sans_Medium ;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #454545;
+}
+.modal_forms input{
+  width: 317px;
+  height: 44px;
+  border: 1px solid #CDB32C;
+  outline: none;
+  padding-left: 40px;
+  margin-bottom: 28px;
+  font-family: Fira_sans_semiBold;
+  font-size: 18px;
+  color: #454545;
+}
+
+.modal_forms button{
+  width: 200px;
+  height: 50px;
+  background-color: #CDB32C;
+  border: none;
+  outline: none;
+  font-family: Fira_sans_Medium;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+
+
+/* header - шапка */
+header {
+  background: #332208;
+}
+.flex {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.left_header {
+  flex-grow: 1;
+}
+.right_header {
+  flex-grow: 0.7;
+}
+.main_header {
+  flex-grow: 2;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  font-family: roboto_regylar;
+  font-size: 18px;
+}
+.right_header {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: right;
+}
+
+/* Баннер */
+.banner {
+  width: 1201px;
+  height: 672px;
+  background-image: url(../img/banner_bg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 110px;
+}
+.banner h1 {
+  font-family: Fira_sans_semiBold;
+  font-size: 64px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+.banner p {
+  font-family: roboto_regylar;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+}
+.banner a {
+  font-family: roboto_regylar;
+  font-size: 18px;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  background-color: #cdb32c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+/* top variables -  топ 10 вариантов */
+.top_variables h2 {
+  font-family: Fira_sans_Medium;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.top_slider {
+  display: flex;
+  gap: 20px;
+}
+.action_block {
+  border-radius: 0 20px 20px 20px;
+  width: 183px;
+  height: 85px;
+  background: #332208;
+  font-family: Fira_sans_semiBold;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top_slider_card {
+  width: 387px;
+  height: 388px;
+}
+.first {
+  background-image: url(../img/first_card.png);
+}
+.second {
+  background-image: url(../img/second_card.png);
+}
+.third {
+  background-image: url(../img/third_card.png);
+}
+.bottom_slider {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 111px;
+}
+.slider_variables {
+  margin-bottom: 110px;
+}
+
+/* reviews - отзывы */
+.reviews {
+  height: 650px;
+  background: #332208;
+}
+.reviews h2 {
+  font-family: Fira_sans_Medium;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 50px;
+}
+.top_slider_card_reviews {
+  width: 270px;
+  height: 300px;
+  border: 1px solid #cdb32c;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.top_slider_card_reviews .title {
+  font-family: Fira_sans_Medium;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.top_slider_card_reviews .text {
+  font-family: roboto_regylar;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* form - форма обратной связи */
+.form {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+}
+.right_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right_form .title {
+  font-family: Fira_sans_Medium;
+  font-size: 24px;
+  color: #332208;
+  margin-bottom: 15px;
+}
+.right_form .text {
+  font-family: roboto_regylar;
+  width: 308px;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+}
+.form button {
+  font-family: roboto_regylar;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  border: none;
+  background: #cdb32c;
+  width: 200px;
+  height: 50px;
+}
+.form input {
+  border: none;
+  outline: none;
+  font-family: roboto_regylar;
+  font-size: 18px;
+  color: #000;
+  padding: 10px;
+  width: 310px;
+  border-bottom: 1px solid #b1b1b1;
+  margin-bottom: 38px;
+}
+.form input::placeholder {
+  border: none;
+  outline: none;
+  font-family: roboto_regylar;
+  font-size: 18px;
+  color: #000;
+}
+/* footer - подвал сайта */
+
+footer {
+  height: 203px;
+  background: #332208;
+}
+.flex_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left_foter {
+  flex-grow: 1;
+}
+.main_footer {
+  flex-grow: 2;
+}
+.right_footer {
+  flex-grow: 0.7;
+}
+
+.flex_foot {
+  display: flex;
+  flex-direction: column;
+  height: 203px;
+  justify-content: center;
+  gap: 40px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.right_footer {
+  color: white;
+  font-family: roboto_regylar;
+  font-size: 18px;
+}
+
+/* slider */
+.but {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.but img {
+  cursor: pointer;
+}
+.top_slider ul {
+  list-style: none;
+}
+.top_slider .carousel,
+.top_slider .car2 {
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-auto-columns: calc((100% / 3) - 12px); */
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+.carousel::-webkit-scrollbar,
+.car2::-webkit-scrollbar {
+  display: none;
+}
+.carousel.dragging,
+.car2.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card,
+.car2.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel .card,
+.car2 .card {
+  scroll-snap-align: start;
+}
+
+.car2 .card .top_slider_card_reviews{
+  width: 280px;
+}
